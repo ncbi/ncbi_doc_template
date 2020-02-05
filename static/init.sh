@@ -64,7 +64,7 @@ git init
 git add --all
 git commit -m "Initial Commit"
 git remote add origin https://github.com/ncbi/$1.git
-git branch -b gh-pages
+git checkout -b gh-pages
 git push -u origin gh-pages
 
 retVal=$?

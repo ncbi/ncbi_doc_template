@@ -1,0 +1,105 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+	<!-- google site verification -->
+	<!--
+<meta name="google-site-verification" content="...Your unique key here (get from Google)..." />
+	-->
+	
+        <title>The title of your documentation</title>
+
+
+        <script type="text/javascript" src="/ncbi_doc_template/default_files/jig.js"></script>
+        <link rel="stylesheet" type="text/css" href="/ncbi_doc_template/default_files/jig.css">
+        <script type="text/javascript" src="/ncbi_doc_template/default_files/jquery.js"></script>
+        <link type="text/css" rel="stylesheet" href="/ncbi_doc_template/default_files/jquery.css">
+
+
+        <!-- Page headcontent begin -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Short description of your documentation">
+	<meta name="ncbipopper" content="triggerPosition:'bottom left',destPosition:'top left',openEvent:'click',closeEvent:'click'">
+
+        <!-- PageFixtures resources end -->
+    
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="robots" content="noindex,nofollow">
+
+      <link rel="stylesheet" href="/ncbi_doc_template/static/css/bookpage.css" type="text/css">
+
+<!-- toggle sidebar functions -->		
+<script type="text/javascript">	
+  function doSBClose() {
+  	document.getElementById("showNav").style.display = "flex";
+	document.getElementById("left-column").style.display = "none";
+  }
+  function doSBOpen() {
+          document.getElementById("sphinxsidebar").style.display = "block";
+	  document.getElementById("left-column").style.display = "flex"; 
+	  document.getElementById("showNav").style.display = "none";
+  }
+</script>
+	
+		
+		
+<!-- updated CSS -->
+
+  <link rel="stylesheet" href="/ncbi_doc_template/static/css/footer.css" type="text/css">
+  <link rel="stylesheet" href="/ncbi_doc_template/static/css/sidebar.css" type="text/css">
+		
+</head>
+<body>
+
+{% include header.html %}    
+
+  <!-- content start -->	
+	
+  <div class="content">
+    
+    <!-- sidebar start -->
+    <div id="left-column">
+      <aside id="sidebar" class="sidebar">
+        <div class="sphinxsidebar" id="sphinxsidebar">
+          <div id="sphinxsidebarwrapper" class="sphinxsidebarwrapper"><a href="javascript:doSBClose()" class="closeNav" id="closeNav"><<< Minimize sidebar</a>
+
+{% include sidebar.html %}
+
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div id="main-column" class="main-column">
+    <a href="javascript:doSBOpen()"><span id="showNav" class="showNav">Sidebar</span></a>
+    <!-- sidebar end -->
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+		  
+	    <!-- main content start -->    
+            <div class="section">
+{{ content }}
+            </div>
+	    <!-- main content end -->    
+		  
+	    <!-- footer start -->    
+            <div id="footer">
+{% include footer.html %}
+            </div>
+	    <!-- footer end -->    
+		  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+	    
+<script type="text/javascript" src="/ncbi_doc_template/default_files/4025445.js"></script>
+	    
+</body>
+</html>	
+	

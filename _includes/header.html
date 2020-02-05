@@ -1,0 +1,85 @@
+<!-- Header start -->
+  <div id="navbar">
+    <nav class="navbar">
+
+                        <!--/.header-->
+                        
+                    	<!-- header start  -->
+<div class="header">
+
+    	
+    	<div class="ncbi_logo">
+		<a href="https://www.ncbi.nlm.nih.gov/" target="_blank">
+			<img title="NCBI Home Page" src="/ncbi_doc_template/static/img/ncbi_logo1.png">
+		</a>
+	</div>
+    	
+	<!-- Replace NCBI URL with your link -->
+	<div class="res_logo">
+		<h1 class="res_name">
+	        	<a href="https://www.ncbi.nlm.nih.gov/" title="Your title here" id="toolkit_header">
+				Your title here
+			</a>
+		</h1>
+	</div>
+    
+	<div style="position: absolute; height: 80px; right: 120px; top: 0; width: 50%" class="search" align="top">
+        	<form name="frmSymbolSearch" onsubmit="return SymbolSearch()" action="https://ncbi.github.io/" id="frmSymbolSearch">
+		
+				<input id="search_box" name="__symbol" placeholder="Search..." onkeypress="SymbolSearchKeyPress(event)" type="text">
+				<label for="search_box" class="offscreen_noflow">Search term</label>
+				<div id="button-holder">
+					<img src="/ncbi_doc_template/static/img/search_icon.png" onclick="javasrcipt:SymbolSearch();">
+				</div>
+			
+	
+		</form>
+	</div>
+
+ </div>   
+
+    </nav>
+	
+	<nav class="navbar2">
+	
+                      
+	<div class="nvgtn">
+	
+		<a style="float:left; padding-left: 50px;" class="jig-ncbipopper" href="https://ncbi.github.io/ncbi_doc_template/pages/test#__nav_cntnt" role="button" aria-expanded="false" aria-haspopup="true">Contents ▾</a>
+		<div id="__nav_cntnt" style="width: 700px; height: 600px; overflow: scroll; top: -100px; left: -100px; display: none; max-height: 600px;" class="ui-helper-reset ui-ncbipopper-wrapper ui-ncbipopper-basic">
+			<a href="https://ncbi.github.io/ncbi_doc_template/" class="right">Table of Contents Page</a>
+			<ul class="simple-list">
+
+				<li class="half_rhythm">
+					<a href="https://ncbi.github.io/ncbi_doc_template/pages/part1">Part 1</a>
+					<ul class="simple-list">
+						<li class="half_rhythm">
+							<a href="https://ncbi.github.io/ncbi_doc_template/pages/chapter1.html">Chapter 1</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="https://ncbi.github.io/ncbi_doc_template/pages/chapter2.html">Chapter 2</a>
+						</li>
+					</ul>
+				</li>
+				<li class="half_rhythm">
+					<a href="https://ncbi.github.io/ncbi_doc_template/pages/part2">Part 2</a>
+					<ul class="simple-list">
+						<li class="half_rhythm">
+							<a href="https://ncbi.github.io/ncbi_doc_template/pages/chapter3.html">Chapter 3</a>
+						</li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		
+		<div>
+			<a style="float:right; padding-right: 50px;" href="https://github.com/ncbi/ncbi_doc_template/edit/gh-pages/{{ page.path }}"><img alt="Edit this page" src="/ncbi_doc_template/static/img/button_edit_grey.gif"></a>
+			<a style="float:right; padding-right: 50px;" target="_blank" href="/ncbi_doc_template/help_page">How to edit the page</a></div>			
+		</div>
+
+	</div>
+	</nav>
+	
+  </div>	
+  <!-- Header end -->	

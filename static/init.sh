@@ -23,6 +23,7 @@ cd $1
 echo "Prepare files for publishing..."
 
 FILES="_includes/header.html
+README.md
 _layouts/default.html
 pages/chapter2.md
 robots.txt
@@ -63,6 +64,7 @@ git init
 git add --all
 git commit -m "Initial Commit"
 git remote add origin https://github.com/ncbi/$1.git
+git branch -b gh-pages
 git push -u origin gh-pages
   
 echo "$1 is pushed to GIT and published. Check results on Settings page: http://github.com/ncbi/$1/settings"

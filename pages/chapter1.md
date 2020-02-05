@@ -35,7 +35,7 @@ How to start
 
 This template is created to help you develop and maintain your documentation based on GitHub platform. We use [GitHub Pages](https://pages.github.com/) for C++ Toolkit documentation. 
 
-To start your project on GitHub you have to create a repository. All NCBI repositories must be reside under GitHub NCBI organisation [https://github.com/ncbi](https://github.com/ncbi). To create a repository you need to submit a request to [github-tools@ncbi.nlm.nih.gov](mailto:github-tools@ncbi.nlm.nih.gov). You will have to provide them with the name for your repository. This name will be part of URL of your GitHub website. You can find the information about GitHub Pages [here](https://help.github.com/en/github/working-with-github-pages/about-github-pages).
+To start your project on GitHub you have to create a repository. All NCBI repositories must be reside under GitHub NCBI organisation [https://github.com/ncbi](https://github.com/ncbi). To create a repository you need to create a JIRA ticket in OSS project. You will have to provide them with the name for your repository. This name will be part of URL of your GitHub website. You can find the information about GitHub Pages [here](https://help.github.com/en/github/working-with-github-pages/about-github-pages).
 
 You also have to ask NCBI GitHub support group to give admin permissions to a person or group of persons that will administrate your repository. This person(s) will administrate your site, give permissions to other contributors, review and merge pull requests, etc.
 You can read about GitHub permissions [here](https://help.github.com/en/github/getting-started-with-github/access-permissions-on-github).
@@ -46,43 +46,25 @@ The result of this request should be GitHub repository located here: https://git
 
 ### Cloning the template
 
-The next step is cloning this template. 
-1. Clone Template repository to create a local copy on your computer. Run:
-
-```
-$ git clone https://github.com/ncbi/ncbi_doc_template.git -d <your_repository_name>
-```
-The result of this command will be a directory named <your_repository_name> with template files.
-
-You can read about cloning GitHub repositories [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
-
-2. Run:
+Click here to download the [init.sh](https://ncbi.github.io/ncbi_doc_template/static/init.sh) script. Save it to your working directory on Linux and run there the command as follows:
 
 ```
 $ ./init.sh <your_repository_name>
 ```
+The script:
 
-This script replaces /ncbi_doc_template/ (the name of template repository) in files with the name of your repository.
-Now your repository is ready to be published.
+  - clones https://github.com/ncbi/ncbi_doc_template.git repository
+  - replaces /ncbi_doc_template/ (the name of template repository) in files with the name of your repository
+  - commits updated files to your new repository
+  - publishes the repository
 
-3. Publish your repository. 
-
-Run this in your terminal:
+To check whether it is published on web go to:
 
 ```
-$ git init
-$ git add --all
-$ git commit -m "Initial Commit"
-$ git remote add origin https://github.com/ncbi/<your_repository_name>.git
-$ git push -u origin master
-``` 
-
-4. Check whether it is published on web. 
-Go to:  
-
 https://github.com/ncbi/<your_repository_name>/settings
+```
 
-Scroll down to 'GitHub Pages' section. If everything is fine, you should see a message that your site is successfully published. Click the link to see the published site.
+Scroll down to ‘GitHub Pages’ section. If everything is fine, you should see a message that your site is successfully published. Click the link to see the published site.
 
 <a name="chapter1.Setting_up_your_own_site"></a>
 

@@ -66,6 +66,12 @@ git commit -m "Initial Commit"
 git remote add origin https://github.com/ncbi/$1.git
 git branch -b gh-pages
 git push -u origin gh-pages
+
+retVal=$?
+if [ $retVal -ne 0 ]; then
+    echo "Failed to push to github. Exit script..."
+    exit -1
+fi
   
 echo "$1 is pushed to GIT and published. Check results on Settings page: http://github.com/ncbi/$1/settings"
 echo "Script finished successfully..." 

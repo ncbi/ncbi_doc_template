@@ -103,7 +103,13 @@ The content consists of your parts and chapters. All content files are located i
 #### How to edit the parts of the template
 
 1. Editing the content.
-To edit the content (chapters), go to the 
+To edit the content (chapters), click 'Edit' button at the top right corner of each chapter.
+
+You can also use this URL to reach any of your files:
+
+```
+https://github.com/ncbi/<your_repository_name>/edit/gh-pages/<path_to_your_file>
+```
 
 <a name="chapter1.Indexing_your_GitHub_site_with_Google"></a>
 

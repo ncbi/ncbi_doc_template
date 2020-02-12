@@ -115,4 +115,4 @@ https://github.com/ncbi/<your_repository_name>/edit/gh-pages/<path_to_your_file>
 
 ### Indexing your GitHub site with Google.
 
-In order to enable Google search on your site, you can use Google sitemaps. Follow the steps on how to build and submit Google sitemaps [here](https://support.google.com/webmasters/answer/183668?hl=en). There are also samples of sitemap (sitemap_000.xml) and robots.txt files in the template's root directory. 
+In order to enable Google search on your site, you can use Google sitemaps. Follow the steps on how to build and submit Google sitemaps [here](https://support.google.com/webmasters/answer/183668?hl=en). There are also samples of sitemap (sitemap_000.xml), google759adab84e4ed1fd.html, and robots.txt files in the template's root directory. You should replace them with your customized files when you set up your own Google indexing or remove them if you will use some other type of indexing.

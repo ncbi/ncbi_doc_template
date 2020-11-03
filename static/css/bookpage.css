@@ -340,11 +340,12 @@ tr.option {color:white;}
     	line-height: 1.5;
 }
 
-.res_logo { 
-	width:25em; 
-	left: 10px; 
-	top: 5px; 
-	position: absolute; 
+.res_logo {
+	width: 25em;
+	max-height: 30px;
+	left: 10px;
+	top: 15px;
+	position: absolute;
 }
 	
 .res_logo h1{font-weight:normal;margin:0}
@@ -390,11 +391,11 @@ tr.option {color:white;}
     width:20px; 
 }
 
-.ncbi_logo{
-	position:absolute; 
+.ncbi_logo {
+	position: absolute;
 	right: 30px;
-	top: 10px;
-	max-height: 24px;
+	top: 25px;
+	max-height: 30px;
 }
 
 .nvgtn {

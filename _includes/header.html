@@ -42,7 +42,26 @@
  </div>   
 
     </nav>
+
+-->
 	
+	<div style="position: absolute; height: 80px; right: 200px; top: 0; width: 550px;" class="search" align="top">
+	<!-- NEW SEARCH FORM -->
+   	<!-- form id="searchForm" method="post" -->
+	<form name="frmSymbolSearch" onsubmit="return SymbolSearch(&#39;toolkit&#39;)" action="https://ncbi.github.io/" id="frmSymbolSearch">	   
+		<fieldset>
+        	<nobr>
+           		<input id="s" name="__symbol" type="text" />
+            		<input type="submit" value="Submit" id="submitButton" />
+         	</nobr>   
+
+        	</fieldset>
+    	</form>
+						
+		<!-- NEW SEARCH FORM END -->
+	</div>
+	</nav>
+	    	
 	<nav class="navbar2">
 	
                       
@@ -80,24 +99,6 @@
 			<a style="float:right; padding-right: 50px;" href="https://github.com/ncbi/ncbi_doc_template/edit/gh-pages/{{ page.path }}"><img alt="Edit this page" src="/ncbi_doc_template/static/img/button_edit_grey.gif"></a>
 			<a style="float:right; padding-right: 50px;" target="_blank" href="/ncbi_doc_template/help_page">How to edit the page</a></div>			
 		</div>
--->
-	
-	<div style="position: absolute; height: 80px; right: 200px; top: 0; width: 550px;" class="search" align="top">
-	<!-- NEW SEARCH FORM -->
-   	<!-- form id="searchForm" method="post" -->
-	<form name="frmSymbolSearch" onsubmit="return SymbolSearch(&#39;toolkit&#39;)" action="https://ncbi.github.io/" id="frmSymbolSearch">	   
-		<fieldset>
-        	<nobr>
-           		<input id="s" name="__symbol" type="text" />
-            		<input type="submit" value="Submit" id="submitButton" />
-         	</nobr>   
-
-        	</fieldset>
-    	</form>
-						
-		<!-- NEW SEARCH FORM END -->
-	</div>
-	</nav>
 	
   </div>	
   <!-- Header end -->	

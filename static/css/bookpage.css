@@ -419,6 +419,7 @@ tr.option {color:white;}
 	-moz-border-radius: 16px;
 	-webkit-border-radius: 16px;
 	border-radius: 16px;
+	padding-top: 1%;
 }
 
 fieldset {

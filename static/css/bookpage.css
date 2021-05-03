@@ -5,6 +5,11 @@
 	box-sizing: border-box
 }
 
+body {
+	margin: 0;
+	overflow-x: visible;
+}
+
 aside,
 footer,
 header,
@@ -214,16 +219,17 @@ div.section>h1 {
 	order: 1;
 	min-height: 600px;
 	width: 68%;
-	max-width: 800px;
+	/* max-width: 800px; */
 	flex-grow: 2;
 	margin: 0px 15px;
 	transition: margin-left .4s cubic-bezier(.02, .01, .47, 1);
 	align-items: center;
 	justify-content: center;
 	display: inline-block;
-	overflow-x: scroll
+	/* overflow-x: scroll */
 }
 
+.content p{max-width: 800px}
 
 /* proposed link colors */
 
@@ -250,6 +256,7 @@ div.section>h1 {
 	min-width: 250px;
 	display: flex;
 	overflow-y: auto;
+	z-index: 9998;
 }
 
 .footer {
@@ -302,7 +309,7 @@ div.sphinxsidebar {
 div.sphinxsidebarwrapper {
 	padding: 0;
 	min-height: 100%;
-	width: 250px;
+	/*	width: 250px;  */
 	right: 0
 }
 
@@ -479,6 +486,43 @@ tr.option {
 }
 
 
+/* Styles for 'Top' button */
+
+#myBtn {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Fixed/sticky position */
+	bottom: 20px;
+	/* Place the button at the bottom of the page */
+	right: 30px;
+	/* Place the button 30px from the right */
+	z-index: 99;
+	/* Make sure it does not overlap */
+	outline: none;
+	/* Remove outline */
+	background-color: #f9f9f9;
+	/* Set a background color */
+	cursor: pointer;
+	/* Add a mouse pointer on hover */
+	border: 1px solid #d9d5d2;
+	border-radius: 3px;
+	box-shadow: none;
+	color: #205081;
+	font-family: Overpass, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	width: 43px;
+	height: 43px;
+	padding: 7px;
+	text-transform: uppercase;
+}
+
+#myBtn:hover {
+	background-color: #555;
+	/* Add a dark-grey background on hover */
+}
+
+
 /* Search Box Styles */
 
 #frmSymbolSearch {
@@ -487,7 +531,6 @@ tr.option {
 	-moz-border-radius: 16px;
 	-webkit-border-radius: 16px;
 	border-radius: 16px;
-	padding-top: 1%;
 }
 
 fieldset {
@@ -556,39 +599,107 @@ input[type=radio] {
 	cursor: pointer;
 }
 
+<!-- new navbar begin -->
 
-/* Styles for 'Top' button */
-
-#myBtn {
-	display: none;
-	/* Hidden by default */
-	position: fixed;
-	/* Fixed/sticky position */
-	bottom: 20px;
-	/* Place the button at the bottom of the page */
-	right: 30px;
-	/* Place the button 30px from the right */
-	z-index: 99;
-	/* Make sure it does not overlap */
-	outline: none;
-	/* Remove outline */
-	background-color: #f9f9f9;
-	/* Set a background color */
-	cursor: pointer;
-	/* Add a mouse pointer on hover */
-	border: 1px solid #d9d5d2;
-	border-radius: 3px;
-	box-shadow: none;
-	color: #205081;
-	font-family: Overpass, Helvetica, Arial, sans-serif;
-	font-weight: 600;
-	width: 43px;
-	height: 43px;
-	padding: 7px;
-	text-transform: uppercase;
+.dropdown {
+  float: left;
+  overflow: auto;
 }
 
-#myBtn:hover {
-	background-color: #555;
-	/* Add a dark-grey background on hover */
+div.dropdown {
+float: left;
+}	
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 4px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #f9f9f9;
+  min-width: 360px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  height: 100px;
+  max-height:600px;/* you can change as you need it */
+  overflow:auto;/* to get scroll */
+  width: 700px;
+  border: 3px solid #3e72a6;
+  border-radius: 6px;
+  transition: height 0.4s;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 2px 6px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content:hover {
+  height: 600px;
+}
+
+<!-- new navbar end -->		
+
+.edit_links {
+	display: flex
+	width:300px;
+	float: right;
+}
+
+div.edit_links {
+	float: right;
+}
+
+.edit_links > * {
+  display:inline-block;
+  vertical-align:middle;
+  padding-top: 4px;
+  padding-right: 50px;	
+}
+
+
+/* New tables styles */
+
+/* Zebra striping  */
+
+div.section tr:nth-child(odd) {
+  background: #F8F8F8;
+}
+
+div.section thead th {
+  padding:20px;
+  border-bottom:1px solid #858d99;
+  background-color: #E8E8E8;
+}
+
+/* Row highlighting on hover */
+ div.section tr:hover {
+	background: #DCDCDC;
+}
+
+
+/* Fixing anchor links hidden under the floating header */
+div.section a {
+	scroll-margin-top: 5em;
 }
